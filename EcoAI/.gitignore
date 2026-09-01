@@ -1,0 +1,29 @@
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Backend
+backend/__pycache__/
+backend/.pytest_cache/
+backend/.mypy_cache/
+backend/*.pyc
+
+# Secrets
+.env
+.env.*
+!.env.example
+backend/.env
+
+# Logs
+*.log
+
+# Git / Vercel
+.git/
+.vercel/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
