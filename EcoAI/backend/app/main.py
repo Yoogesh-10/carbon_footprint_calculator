@@ -24,7 +24,11 @@ allowed_origins = [origin.strip() for origin in cors_origins_env.split(",") if o
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=allowed_origins if allowed_origins else ["*"],
+    allow_origins=[
+        "https://carbon-footprint-calculator-yms3.vercel.app",
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
